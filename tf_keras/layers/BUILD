@@ -25,6 +25,7 @@ py_library(
         "__init__.py",
         "serialization.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":kernelized",
         ":noise",
@@ -49,6 +50,7 @@ py_library(
 py_library(
     name = "kernelized",
     srcs = ["kernelized.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:base_layer",
@@ -61,6 +63,7 @@ py_library(
 py_library(
     name = "noise",
     srcs = ["noise.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//tf_keras/layers/regularization:alpha_dropout",
         "//tf_keras/layers/regularization:gaussian_dropout",
@@ -76,6 +79,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/saving",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
@@ -90,6 +94,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
         "@pypi//numpy",
@@ -103,6 +108,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -117,6 +123,7 @@ tf_py_test(
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
         "//tf_keras:backend",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/initializers",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
@@ -131,5 +138,6 @@ tf_py_test(
     deps = [
         ":layers",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
     ],
 )

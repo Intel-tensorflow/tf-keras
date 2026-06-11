@@ -36,6 +36,7 @@ py_library(
         "vgg19.py",
         "xception.py",
     ],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:public"],
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -65,6 +66,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -85,6 +87,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -108,6 +111,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -127,6 +131,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -145,6 +150,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -163,6 +169,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -181,6 +188,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -199,6 +207,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -217,6 +226,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -235,6 +245,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -253,6 +264,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -271,6 +283,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -289,6 +302,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -307,6 +321,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -326,6 +341,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -345,6 +361,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -364,6 +381,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -382,6 +400,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -400,6 +419,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -418,6 +438,7 @@ tf_py_test(
     deps = [
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/preprocessing",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -432,6 +453,7 @@ tf_py_test(
         ":applications",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],

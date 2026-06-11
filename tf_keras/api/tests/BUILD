@@ -29,11 +29,12 @@ tf_py_test(
         "no_windows",  # Bugs due to some paths.
     ],
     deps = [
-        "//third_party/py/tensorflow",
-        "//third_party/tensorflow/python/lib/io:file_io",
-        "//third_party/tensorflow/tools/api/lib:python_object_to_proto_visitor",
-        "//third_party/tensorflow/tools/common:public_api",
-        "//third_party/tensorflow/tools/common:traverse",
         "@pypi//six",
+        "//third_party/py/tensorflow",
+        "//tf_keras/api:tf_keras_api",
+        # "//third_party/tensorflow/python/lib/io:file_io",
+        # "//third_party/tensorflow/tools/api/lib:python_object_to_proto_visitor",
+        # "//third_party/tensorflow/tools/common:public_api",
+        # "//third_party/tensorflow/tools/common:traverse",
     ],
 )

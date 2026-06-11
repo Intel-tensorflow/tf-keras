@@ -17,6 +17,7 @@ py_library(
     srcs = [
         "__init__.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":locally_connected1d",
         ":locally_connected2d",
@@ -26,6 +27,7 @@ py_library(
 py_library(
     name = "locally_connected_utils",
     srcs = ["locally_connected_utils.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -37,6 +39,7 @@ py_library(
 py_library(
     name = "locally_connected1d",
     srcs = ["locally_connected1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":locally_connected_utils",
         "//tf_keras:activations",
@@ -54,6 +57,7 @@ py_library(
 py_library(
     name = "locally_connected2d",
     srcs = ["locally_connected2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":locally_connected_utils",
         "//tf_keras:activations",
@@ -77,6 +81,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/optimizers/legacy:optimizers",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",

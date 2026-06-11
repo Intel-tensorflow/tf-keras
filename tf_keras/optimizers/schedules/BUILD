@@ -16,9 +16,13 @@ py_library(
         "__init__.py",
         "learning_rate_schedule.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
-        "//tf_keras/utils:generic_utils",
+        "//tf_keras:backend",
+        "//tf_keras/saving:serialization",
+        "//tf_keras/saving:serialization_lib",
+        # "//third_party/tensorflow/python/util:core",
     ],
 )
 
@@ -28,8 +32,9 @@ cuda_py_test(
     srcs = ["learning_rate_schedule_test.py"],
     shard_count = 4,
     deps = [
+        ":learning_rate_schedule",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
-        "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/optimizers/legacy:optimizers",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized

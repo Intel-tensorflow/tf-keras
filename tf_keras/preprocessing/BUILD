@@ -17,6 +17,7 @@ py_library(
     srcs = [
         "__init__.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":image",
         ":sequence",
@@ -30,6 +31,7 @@ py_library(
     srcs = [
         "image.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -46,6 +48,7 @@ py_library(
     srcs = [
         "sequence.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras/utils:data_utils",
@@ -57,6 +60,7 @@ py_library(
     srcs = [
         "text.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
     ],
@@ -73,6 +77,7 @@ tf_py_test(
         ":image",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//numpy",
         "@pypi//pandas",
@@ -86,6 +91,7 @@ tf_py_test(
     deps = [
         ":sequence",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//numpy",
     ],
@@ -98,6 +104,7 @@ tf_py_test(
     deps = [
         ":text",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//numpy",
     ],

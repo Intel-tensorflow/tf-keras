@@ -21,6 +21,7 @@ package(
 py_library(
     name = "regularization",
     srcs = ["__init__.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":activity_regularization",
         ":alpha_dropout",
@@ -36,6 +37,7 @@ py_library(
 py_library(
     name = "dropout",
     srcs = ["dropout.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -47,6 +49,7 @@ py_library(
 py_library(
     name = "spatial_dropout1d",
     srcs = ["spatial_dropout1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":dropout",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -57,6 +60,7 @@ py_library(
 py_library(
     name = "spatial_dropout2d",
     srcs = ["spatial_dropout2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":dropout",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -68,6 +72,7 @@ py_library(
 py_library(
     name = "spatial_dropout3d",
     srcs = ["spatial_dropout3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":dropout",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -79,6 +84,7 @@ py_library(
 py_library(
     name = "gaussian_dropout",
     srcs = ["gaussian_dropout.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -91,6 +97,7 @@ py_library(
 py_library(
     name = "gaussian_noise",
     srcs = ["gaussian_noise.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -102,6 +109,7 @@ py_library(
 py_library(
     name = "activity_regularization",
     srcs = ["activity_regularization.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//tf_keras:regularizers",
         "//tf_keras/engine:base_layer",
@@ -111,6 +119,7 @@ py_library(
 py_library(
     name = "alpha_dropout",
     srcs = ["alpha_dropout.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -127,6 +136,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//numpy",
@@ -141,6 +151,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
     ],
@@ -153,6 +164,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//numpy",
@@ -166,6 +178,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//numpy",
@@ -180,6 +193,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//numpy",
     ],
@@ -192,6 +206,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//numpy",

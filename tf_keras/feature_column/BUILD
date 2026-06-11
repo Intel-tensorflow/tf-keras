@@ -15,6 +15,7 @@ package(
 py_library(
     name = "feature_column",
     srcs = ["__init__.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_feature_layer",
         ":dense_features",
@@ -26,6 +27,7 @@ py_library(
 py_library(
     name = "base_feature_layer",
     srcs = ["base_feature_layer.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras/engine:base_layer",
@@ -38,6 +40,7 @@ py_library(
     srcs = [
         "dense_features.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_feature_layer",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -50,6 +53,7 @@ py_library(
     srcs = [
         "dense_features_v2.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_feature_layer",
         ":dense_features",
@@ -66,6 +70,7 @@ tf_py_test(
         ":dense_features",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
     ],
 )
@@ -78,6 +83,7 @@ tf_py_test(
         ":dense_features_v2",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
     ],
 )
@@ -85,6 +91,7 @@ tf_py_test(
 py_library(
     name = "sequence_feature_column",
     srcs = ["sequence_feature_column.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_feature_layer",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -99,6 +106,7 @@ tf_py_test(
         ":sequence_feature_column",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
@@ -112,6 +120,7 @@ tf_py_test(
         ":dense_features",
         ":sequence_feature_column",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/layers/core",
         "//tf_keras/layers/merging",
         "//tf_keras/layers/rnn",

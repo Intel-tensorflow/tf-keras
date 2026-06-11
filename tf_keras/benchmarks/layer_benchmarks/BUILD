@@ -36,12 +36,14 @@ BECHMARK_TAGS = [
 py_library(
     name = "run_xprof",
     srcs = ["run_xprof.py"],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:private"],
 )
 
 py_library(
     name = "layer_benchmarks_test_base",
     srcs = ["layer_benchmarks_test_base.py"],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:private"],
     deps = [
         ":run_xprof",
@@ -59,5 +61,7 @@ tf_py_test(
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"
         "//tf_keras/api:tf_keras_api",
         "//tf_keras/benchmarks:benchmark_util",
+        # "//third_party/tensorflow/compiler/jit:xla_cpu_jit",
+        # "//third_party/tensorflow/compiler/jit:xla_gpu_jit",
     ],
 )

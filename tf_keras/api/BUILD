@@ -1,5 +1,5 @@
 # Description:
-# Package for TF-Keras.
+# Package for TF-Keras public API.
 
 load("@rules_python//python:py_binary.bzl", "py_binary")
 load("@rules_python//python:py_library.bzl", "py_library")
@@ -23,6 +23,7 @@ py_library(
         ":tf_keras_python_api_gen_compat_v1",
         ":tf_keras_python_api_gen_compat_v2",
     ],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:public"],
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -33,9 +34,10 @@ py_library(
 py_binary(
     name = "extractor_wrapper",
     srcs = ["extractor_wrapper.py"],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:public"],
     deps = [
-        "//:tf_nightly_with_deps",  # "//third_party/tensorflow/python/tools/api/generator2/extractor"
+        "//:tf_nightly_with_deps",  # # "//third_party/tensorflow/python/tools/api/generator2/extractor"
         "@pypi//absl_py",  # absl:app
     ],
 )
@@ -43,9 +45,10 @@ py_binary(
 py_binary(
     name = "generator_wrapper",
     srcs = ["generator_wrapper.py"],
+    # copybara:uncomment strict_deps = False,
     visibility = ["//visibility:public"],
     deps = [
-        "//:tf_nightly_with_deps",  # "//third_party/tensorflow/python/tools/api/generator2/generator"
+        "//:tf_nightly_with_deps",  # # "//third_party/tensorflow/python/tools/api/generator2/generator"
         "@pypi//absl_py",  # absl:app
     ],
 )

@@ -28,6 +28,7 @@ package(
 # Add all benchmarks related utils here for pip testing dependencies.
 py_library(
     name = "keras_benchmark_lib_pip",
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":benchmark_util",
         ":distribution_util",
@@ -38,6 +39,7 @@ py_library(
 # This lib is mainly for running benchmarks on mlcompass infra.
 py_library(
     name = "profiler_lib",
+    # copybara:uncomment strict_deps = False,
     visibility = [
         "//learning/brain/contrib/keras_benchmark:__subpackages__",
         "//tf_keras:friends",
@@ -53,6 +55,7 @@ py_test(
     name = "keras_cpu_benchmark_test",
     size = "large",
     srcs = ["keras_cpu_benchmark_test.py"],
+    # copybara:uncomment strict_deps = False,
     tags = COMMON_TAGS,
     deps = [
         ":benchmark_util",
@@ -94,10 +97,10 @@ py_library(
         "__init__.py",
         "benchmark_util.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":distribution_util",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"
-        "//tf_keras/api:tf_keras_api",
         "@pypi//numpy",
     ],
 )
@@ -105,6 +108,7 @@ py_library(
 py_test(
     name = "benchmark_util_test",
     srcs = ["benchmark_util_test.py"],
+    # copybara:uncomment strict_deps = False,
     tags = COMMON_TAGS,
     deps = [
         ":benchmark_util",
@@ -116,6 +120,7 @@ py_test(
 py_library(
     name = "distribution_util",
     srcs = ["distribution_util.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"
     ],
@@ -124,6 +129,7 @@ py_library(
 py_test(
     name = "optimizer_benchmarks_test",
     srcs = ["optimizer_benchmarks_test.py"],
+    # copybara:uncomment strict_deps = False,
     tags = COMMON_TAGS + [
         "no_oss_py38",  # TODO(b/162044699)
     ],
@@ -133,6 +139,8 @@ py_test(
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"
         "//tf_keras/api:tf_keras_api",
         "//tf_keras/optimizers/legacy:optimizers",
+        # "//third_party/tensorflow/compiler/jit:xla_cpu_jit",
+        # "//third_party/tensorflow/compiler/jit:xla_gpu_jit",
     ],
 )
 
@@ -146,6 +154,7 @@ py_test(
 py_binary(
     name = "model_memory_profile",
     srcs = ["model_memory_profile.py"],
+    # copybara:uncomment strict_deps = False,
     tags = ["no_oss"],
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"
@@ -155,6 +164,7 @@ py_binary(
 py_test(
     name = "metrics_memory_benchmark_test",
     srcs = ["metrics_memory_benchmark_test.py"],
+    # copybara:uncomment strict_deps = False,
     tags = COMMON_TAGS,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_no_contrib"

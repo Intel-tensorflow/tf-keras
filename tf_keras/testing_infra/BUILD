@@ -15,6 +15,7 @@ py_library(
     srcs = [
         "test_combinations.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":test_utils",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -29,6 +30,7 @@ py_library(
         "__init__.py",
         "test_utils.py",
     ],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -47,6 +49,7 @@ py_library(
 py_library(
     name = "keras_doctest_lib",
     srcs = ["keras_doctest_lib.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "@pypi//numpy",
     ],
@@ -63,6 +66,7 @@ tf_py_test(
     deps = [
         ":keras_doctest_lib",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
+        "//tf_keras/api:tf_keras_api",
         "@pypi//absl_py",  # absl/testing:parameterized
     ],
 )
@@ -77,6 +81,7 @@ tf_py_test(
         ":test_utils",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "@pypi//absl_py",  # absl/testing:parameterized
         "@pypi//numpy",
     ],

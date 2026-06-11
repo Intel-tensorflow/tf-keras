@@ -21,6 +21,7 @@ package(
 py_library(
     name = "pooling",
     srcs = ["__init__.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":average_pooling1d",
         ":average_pooling2d",
@@ -40,6 +41,7 @@ py_library(
 py_library(
     name = "base_pooling1d",
     srcs = ["base_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -52,6 +54,7 @@ py_library(
 py_library(
     name = "base_pooling2d",
     srcs = ["base_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -64,6 +67,7 @@ py_library(
 py_library(
     name = "base_pooling3d",
     srcs = ["base_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras:backend",
@@ -76,6 +80,7 @@ py_library(
 py_library(
     name = "base_global_pooling1d",
     srcs = ["base_global_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras/engine:base_layer",
@@ -87,6 +92,7 @@ py_library(
 py_library(
     name = "base_global_pooling2d",
     srcs = ["base_global_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras/engine:base_layer",
@@ -98,6 +104,7 @@ py_library(
 py_library(
     name = "base_global_pooling3d",
     srcs = ["base_global_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras/engine:base_layer",
@@ -109,6 +116,7 @@ py_library(
 py_library(
     name = "max_pooling1d",
     srcs = ["max_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling1d",
         "//tf_keras:backend",
@@ -118,6 +126,7 @@ py_library(
 py_library(
     name = "max_pooling2d",
     srcs = ["max_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling2d",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -127,6 +136,7 @@ py_library(
 py_library(
     name = "max_pooling3d",
     srcs = ["max_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling3d",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -136,6 +146,7 @@ py_library(
 py_library(
     name = "average_pooling1d",
     srcs = ["average_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling1d",
         "//tf_keras:backend",
@@ -145,6 +156,7 @@ py_library(
 py_library(
     name = "average_pooling2d",
     srcs = ["average_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling2d",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -154,6 +166,7 @@ py_library(
 py_library(
     name = "average_pooling3d",
     srcs = ["average_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_pooling3d",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -163,6 +176,7 @@ py_library(
 py_library(
     name = "global_max_pooling1d",
     srcs = ["global_max_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling1d",
         "//tf_keras:backend",
@@ -172,6 +186,7 @@ py_library(
 py_library(
     name = "global_max_pooling2d",
     srcs = ["global_max_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling2d",
         "//tf_keras:backend",
@@ -181,6 +196,7 @@ py_library(
 py_library(
     name = "global_max_pooling3d",
     srcs = ["global_max_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling3d",
         "//tf_keras:backend",
@@ -190,6 +206,7 @@ py_library(
 py_library(
     name = "global_average_pooling1d",
     srcs = ["global_average_pooling1d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling1d",
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
@@ -200,6 +217,7 @@ py_library(
 py_library(
     name = "global_average_pooling2d",
     srcs = ["global_average_pooling2d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling2d",
         "//tf_keras:backend",
@@ -209,6 +227,7 @@ py_library(
 py_library(
     name = "global_average_pooling3d",
     srcs = ["global_average_pooling3d.py"],
+    # copybara:uncomment strict_deps = False,
     deps = [
         ":base_global_pooling3d",
         "//tf_keras:backend",
@@ -226,6 +245,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//absl_py",  # absl/testing:parameterized
@@ -243,6 +263,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//absl_py",  # absl/testing:parameterized
@@ -260,6 +281,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//absl_py",  # absl/testing:parameterized
@@ -277,6 +299,7 @@ tf_py_test(
     deps = [
         "//:tf_nightly_with_deps",  # "//third_party/py/tensorflow:tensorflow_core"
         "//tf_keras",
+        "//tf_keras/api:tf_keras_api",
         "//tf_keras/testing_infra:test_combinations",
         "//tf_keras/testing_infra:test_utils",
         "@pypi//absl_py",  # absl/testing:parameterized
