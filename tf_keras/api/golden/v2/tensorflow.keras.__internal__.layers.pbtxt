@@ -2,10 +2,10 @@ path: "tensorflow.keras.__internal__.layers"
 tf_module {
   member {
     name: "BaseDenseAttention"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "BaseRandomLayer"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
 }

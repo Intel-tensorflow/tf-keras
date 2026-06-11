@@ -2,6 +2,6 @@ path: "tensorflow.keras.callbacks.experimental"
 tf_module {
   member {
     name: "UpdateEmbeddingCallback"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
 }

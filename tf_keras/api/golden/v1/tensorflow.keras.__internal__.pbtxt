@@ -2,11 +2,11 @@ path: "tensorflow.keras.__internal__"
 tf_module {
   member {
     name: "layers"
-    mtype: "<type \'module\'>"
+    mtype: "<class \'module\'>"
   }
   member {
     name: "legacy"
-    mtype: "<type \'module\'>"
+    mtype: "<class \'module\'>"
   }
   member_method {
     name: "enable_unsafe_deserialization"

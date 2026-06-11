@@ -2,7 +2,7 @@ path: "tensorflow.keras.backend"
 tf_module {
   member {
     name: "name_scope"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'abc.ABCMeta\'>"
   }
   member_method {
     name: "abs"

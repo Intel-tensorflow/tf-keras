@@ -2,26 +2,26 @@ path: "tensorflow.keras.experimental"
 tf_module {
   member {
     name: "CosineDecay"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "CosineDecayRestarts"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "LinearModel"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "SequenceFeatures"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "SidecarEvaluator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "WideDeepModel"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
 }

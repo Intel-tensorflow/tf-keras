@@ -2,7 +2,7 @@ path: "tensorflow.keras.callbacks.LambdaCallback"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.LambdaCallback\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'on_epoch_begin\', \'on_epoch_end\', \'on_batch_begin\', \'on_batch_end\', \'on_train_begin\', \'on_train_end\'], varargs=None, keywords=kwargs, defaults=[\'None\', \'None\', \'None\', \'None\', \'None\', \'None\'], "

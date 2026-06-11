@@ -2,10 +2,10 @@ path: "tensorflow.keras.__internal__.legacy"
 tf_module {
   member {
     name: "layers"
-    mtype: "<type \'module\'>"
+    mtype: "<class \'module\'>"
   }
   member {
     name: "rnn_cell"
-    mtype: "<type \'module\'>"
+    mtype: "<class \'module\'>"
   }
 }

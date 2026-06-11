@@ -2,7 +2,7 @@ path: "tensorflow.keras.experimental.SidecarEvaluator"
 tf_class {
   is_instance: "<class \'tf_keras.utils.sidecar_evaluator.SidecarEvaluatorExperimental\'>"
   is_instance: "<class \'tf_keras.utils.sidecar_evaluator.SidecarEvaluator\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\'], varargs=args, keywords=kwargs, defaults=None"

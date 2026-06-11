@@ -1,7 +1,7 @@
 path: "tensorflow.keras.callbacks.CallbackList"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.CallbackList\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'callbacks\', \'add_history\', \'add_progbar\', \'model\'], varargs=None, keywords=params, defaults=[\'None\', \'False\', \'False\', \'None\'], "

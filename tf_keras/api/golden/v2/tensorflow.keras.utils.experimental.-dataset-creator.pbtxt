@@ -1,7 +1,7 @@
 path: "tensorflow.keras.utils.experimental.DatasetCreator"
 tf_class {
   is_instance: "<class \'tf_keras.utils.dataset_creator.DatasetCreator\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'dataset_fn\', \'input_options\'], varargs=None, keywords=None, defaults=[\'None\'], "

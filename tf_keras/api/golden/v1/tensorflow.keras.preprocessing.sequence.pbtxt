@@ -2,7 +2,7 @@ path: "tensorflow.keras.preprocessing.sequence"
 tf_module {
   member {
     name: "TimeseriesGenerator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member_method {
     name: "make_sampling_table"

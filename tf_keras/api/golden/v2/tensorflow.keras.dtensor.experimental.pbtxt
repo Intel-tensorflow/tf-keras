@@ -2,10 +2,10 @@ path: "tensorflow.keras.dtensor.experimental"
 tf_module {
   member {
     name: "LayoutMap"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'abc.ABCMeta\'>"
   }
   member {
     name: "optimizers"
-    mtype: "<type \'module\'>"
+    mtype: "<class \'module\'>"
   }
 }

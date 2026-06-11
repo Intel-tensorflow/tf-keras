@@ -2,19 +2,19 @@ path: "tensorflow.keras.preprocessing.image"
 tf_module {
   member {
     name: "DirectoryIterator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "ImageDataGenerator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "Iterator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member {
     name: "NumpyArrayIterator"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member_method {
     name: "apply_affine_transform"

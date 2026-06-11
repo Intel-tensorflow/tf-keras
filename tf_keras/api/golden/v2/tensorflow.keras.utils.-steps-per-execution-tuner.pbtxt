@@ -1,10 +1,10 @@
 path: "tensorflow.keras.utils.StepsPerExecutionTuner"
 tf_class {
   is_instance: "<class \'tf_keras.utils.steps_per_execution_tuning.StepsPerExecutionTuner\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member {
     name: "steps_per_execution"
-    mtype: "<type \'property\'>"
+    mtype: "<class \'property\'>"
   }
   member_method {
     name: "__init__"

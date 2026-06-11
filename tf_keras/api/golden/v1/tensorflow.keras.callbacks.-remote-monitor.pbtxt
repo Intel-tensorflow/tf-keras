@@ -2,7 +2,7 @@ path: "tensorflow.keras.callbacks.RemoteMonitor"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.RemoteMonitor\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'root\', \'path\', \'field\', \'headers\', \'send_as_json\'], varargs=None, keywords=None, defaults=[\'http://localhost:9000\', \'/publish/epoch/end/\', \'data\', \'None\', \'False\'], "

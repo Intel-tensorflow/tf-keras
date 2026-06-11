@@ -2,7 +2,7 @@ path: "tensorflow.keras.constraints.NonNeg"
 tf_class {
   is_instance: "<class \'tf_keras.constraints.NonNeg\'>"
   is_instance: "<class \'tf_keras.constraints.Constraint\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
   }

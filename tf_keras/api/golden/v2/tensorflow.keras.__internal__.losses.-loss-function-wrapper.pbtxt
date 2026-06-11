@@ -2,7 +2,7 @@ path: "tensorflow.keras.__internal__.losses.LossFunctionWrapper"
 tf_class {
   is_instance: "<class \'tf_keras.losses.LossFunctionWrapper\'>"
   is_instance: "<class \'tf_keras.losses.Loss\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'fn\', \'reduction\', \'name\'], varargs=None, keywords=kwargs, defaults=[\'auto\', \'None\'], "

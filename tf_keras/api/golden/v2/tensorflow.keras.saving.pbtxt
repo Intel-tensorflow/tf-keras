@@ -2,7 +2,7 @@ path: "tensorflow.keras.saving"
 tf_module {
   member {
     name: "custom_object_scope"
-    mtype: "<type \'type\'>"
+    mtype: "<class \'type\'>"
   }
   member_method {
     name: "deserialize_keras_object"

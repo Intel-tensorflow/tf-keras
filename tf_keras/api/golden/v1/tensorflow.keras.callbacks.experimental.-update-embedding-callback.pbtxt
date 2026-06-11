@@ -3,7 +3,7 @@ tf_class {
   is_instance: "<class \'tf_keras.callbacks.UpdateEmbeddingCallback\'>"
   is_instance: "<class \'tf_keras.utils.timed_threads.TimedThread\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'dynamic_embedding_layer\', \'interval\'], varargs=None, keywords=None, defaults=None"

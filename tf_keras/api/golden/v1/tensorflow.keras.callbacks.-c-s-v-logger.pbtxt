@@ -2,7 +2,7 @@ path: "tensorflow.keras.callbacks.CSVLogger"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.CSVLogger\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'filename\', \'separator\', \'append\'], varargs=None, keywords=None, defaults=[\',\', \'False\'], "

@@ -1,10 +1,10 @@
 path: "tensorflow.keras.utils.DeterministicRandomTestTool"
 tf_class {
   is_instance: "<class \'tf_keras.legacy_tf_layers.migration_utils.DeterministicRandomTestTool\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member {
     name: "operation_seed"
-    mtype: "<type \'property\'>"
+    mtype: "<class \'property\'>"
   }
   member_method {
     name: "__init__"

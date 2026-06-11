@@ -2,7 +2,7 @@ path: "tensorflow.keras.regularizers.orthogonal_regularizer"
 tf_class {
   is_instance: "<class \'tf_keras.regularizers.OrthogonalRegularizer\'>"
   is_instance: "<class \'tf_keras.regularizers.Regularizer\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'factor\', \'mode\'], varargs=None, keywords=None, defaults=[\'0.01\', \'rows\'], "

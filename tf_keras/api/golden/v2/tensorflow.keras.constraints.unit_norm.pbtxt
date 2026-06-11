@@ -2,7 +2,7 @@ path: "tensorflow.keras.constraints.unit_norm"
 tf_class {
   is_instance: "<class \'tf_keras.constraints.UnitNorm\'>"
   is_instance: "<class \'tf_keras.constraints.Constraint\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'axis\'], varargs=None, keywords=None, defaults=[\'0\'], "

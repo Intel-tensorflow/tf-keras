@@ -2,7 +2,7 @@ path: "tensorflow.keras.callbacks.ProgbarLogger"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.ProgbarLogger\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'count_mode\', \'stateful_metrics\'], varargs=None, keywords=None, defaults=[\'samples\', \'None\'], "

@@ -2,7 +2,7 @@ path: "tensorflow.keras.callbacks.BackupAndRestore"
 tf_class {
   is_instance: "<class \'tf_keras.callbacks.BackupAndRestore\'>"
   is_instance: "<class \'tf_keras.callbacks.Callback\'>"
-  is_instance: "<type \'object\'>"
+  is_instance: "<class \'object\'>"
   member_method {
     name: "__init__"
     argspec: "args=[\'self\', \'backup_dir\', \'save_freq\', \'delete_checkpoint\', \'save_before_preemption\'], varargs=None, keywords=None, defaults=[\'epoch\', \'True\', \'False\'], "
