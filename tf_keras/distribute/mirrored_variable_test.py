@@ -47,15 +47,14 @@ def get_strategy_with_mimicing_cpus():
 
 @tf.__internal__.distribute.combinations.generate(
     tf.__internal__.test.combinations.combine(
-        distribution=list(
-            filter(
-                None.__ne__,
-                [
-                    tf.__internal__.distribute.combinations.mirrored_strategy_with_gpu_and_cpu,  # noqa: E501
-                    get_strategy_with_mimicing_cpus(),
-                ],
-            )
-        ),
+        distribution=[
+            x
+            for x in [
+                tf.__internal__.distribute.combinations.mirrored_strategy_with_gpu_and_cpu,  # noqa: E501
+                get_strategy_with_mimicing_cpus(),
+            ]
+            if x is not None
+        ],
         mode=["graph", "eager"],
     )
 )
