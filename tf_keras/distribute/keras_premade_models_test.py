@@ -119,7 +119,9 @@ class KerasPremadeModelsTest(tf.test.TestCase, parameterized.TestCase):
                     inputs, output = get_numpy()
                     hist = model.fit(inputs, output, epochs=3)
                 else:
-                    hist = model.fit(get_dataset(), epochs=3)
+                    hist = model.fit(
+                        get_dataset(), epochs=3, steps_per_epoch=INPUT_SIZE
+                    )
                 self.assertLess(hist.history["loss"][2], 0.2)
 
     @tf.__internal__.distribute.combinations.generate(
@@ -162,7 +164,9 @@ class KerasPremadeModelsTest(tf.test.TestCase, parameterized.TestCase):
                     inputs, output = get_numpy()
                     hist = wide_deep_model.fit(inputs, output, epochs=3)
                 else:
-                    hist = wide_deep_model.fit(get_dataset(), epochs=3)
+                    hist = wide_deep_model.fit(
+                        get_dataset(), epochs=3, steps_per_epoch=INPUT_SIZE
+                    )
             self.assertLess(hist.history["loss"][2], 0.2)
 
 
